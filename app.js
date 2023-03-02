@@ -14,6 +14,11 @@ app.use("/files",express.static("./public/files"));
 
 app.use(router);
 
+
+app.get('/test',(req,res)=>{
+    res.json("ok!!!")
+  })
+
 app.listen(PORT,()=>{
     console.log(`Server start at port no ${PORT}`)
 })
